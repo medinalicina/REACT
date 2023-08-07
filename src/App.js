@@ -1,19 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+// import Card from './components/Card';
+// import Button from './components/Button';
 
-function App() {
-  const customStyle ={
-    color:"pink",
-    fontSize: "23px",
-  }
-  const onClickHandler= () => console.log("MEDINA")
+const App = () => {
+  const[broj, setBroj] = useState(0);
   return (
-    <div>
-      <h1 style={customStyle} onClick={onClick}></h1>
-    <button onClick={() => console.log("kliknula")}> Klikni</button>
+    <div className='app'>
+      <button onClick={()=> setBroj(broj+1)}>DODAJ</button>
+      {broj}
+      <button onClick={()=> setBroj(broj-1)}>SMANJI</button>
     </div>
-     
+    // <div className="app">
+    //   <h1>Dobrodošli u prodavnicu patika</h1>
+    //   <Card
+    //     image={''}
+    //     title="Patike Jordan"
+    //     description="Ovo su neverovatne patike koje ćete obožavati!"
+    //     price={20000}
+    //   />
+    //   <Button price={20000} />
+    // </div>
   );
-}
+};
 
 export default App;
