@@ -13,6 +13,24 @@ const App = () => {
       price={product.price}/>
     ))}
      </div>
+     return (
+      <div className='app'>
+     {customProducts.map((product)=> (
+       <Card 
+       title={product.title}
+       description={product.description}
+       price={product.price}/>
+     ))}
+      </div
+      return (
+     <div className='app'>
+    {customProducts.map((product)=> (
+      <Card 
+      title={product.title}
+      description={product.description}
+      price={product.price}/>
+    ))}
+     </div>
 
 
 
