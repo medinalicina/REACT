@@ -3,34 +3,60 @@ import React, { useState } from 'react';
 // import Button from './components/Button';
 //usestate cuva 
 const App = () => {
+  const fetchData = () => {
+    //   fetch("https://dummyjson.com/products")
+    //     .then((res) => res.json())
+    //     // .then((someData) => someData.filter((el) => ........................))
+    //     .then((data) => setAllData(data.products));
+    // };
+  
+    const [isSwitchOn, setIsSwitchOn] = useState(false);
+    console.log(isSwitchOn);
+  
+    return (
+      <div className="app">
+        {/* {!allData.length && (
+          <div style={{ marginTop: "300px", textAlign: "center" }}>
+            <h1>Nema podataka</h1>
+            <button onClick={() => fetchData()}>Fetchaj podatke</button>
+          </div>
+
+
+
+
+
+
+
+
+  //stekoverflov
   // const[broj, setBroj] = useState(0);
-  return (
-     <div className='app'>
-    {customProducts.map((product)=> (
-      <Card 
-      title={product.title}
-      description={product.description}
-      price={product.price}/>
-    ))}
-     </div>
-     return (
-      <div className='app'>
-     {customProducts.map((product)=> (
-       <Card 
-       title={product.title}
-       description={product.description}
-       price={product.price}/>
-     ))}
-      </div
-      return (
-     <div className='app'>
-    {customProducts.map((product)=> (
-      <Card 
-      title={product.title}
-      description={product.description}
-      price={product.price}/>
-    ))}
-     </div>
+  // return (
+  //    <div className='app'>
+  //   {customProducts.map((product)=> (
+  //     <Card 
+  //     title={product.title}
+  //     description={product.description}
+  //     price={product.price}/>
+  //   ))}
+  //    </div>
+  //    return (
+  //     <div className='app'>
+  //    {customProducts.map((product)=> (
+  //      <Card 
+  //      title={product.title}
+  //      description={product.description}
+  //      price={product.price}/>
+  //    ))}
+  //     </div
+  //     return (
+  //    <div className='app'>
+  //   {customProducts.map((product)=> (
+  //     <Card 
+  //     title={product.title}
+  //     description={product.description}
+  //     price={product.price}/>
+  //   ))}
+  //    </div>
 
 
 
