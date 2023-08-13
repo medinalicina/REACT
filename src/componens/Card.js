@@ -1,6 +1,23 @@
 import React from "react";
 import './app.css';
 
+function card(){
+    return(
+        <div className="app">
+            <div name="card">
+                <h1>BROJ CELZIJUSA</h1>
+                <button onClick={() => alert("Promeni temperaturu")}>
+        Promeni temperaturu
+        </button>
+            </div>
+        </div>
+    )
+}
+
+
+
+
+
 
 // const Card = ({  slika, ime, opis, cena }) => {
 //     return (
