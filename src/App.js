@@ -1,41 +1,41 @@
-import React, { useState } from 'react';
-import Card from './components/Card';
-import Button from './components/Button';
-//usestate cuva 
-import React, { Component } from 'react';
-import './domaci.css';
+// import React, { useState } from 'react';
+// import Card from './components/Card';
+// import Button from './components/Button';
+// //usestate cuva 
+// import React, { Component } from 'react';
+// import './domaci.css';
 
-class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      temperature: Math.floor(Math.random() * 100), // Generiše slučajan broj temperature
-      message: '',
-    };
-  }
 
-  checkTemperature = () => {
-    const { temperature } = this.state;
-    if (temperature === 42) {
-      this.setState({ message: 'Toplo je!' });
-    } else {
-      this.setState({ message: 'Nije toplo.' });
-    }
-  };
 
-  // render() {
-  //   return (
-  //     <div className="App">
-  //       <h1>Provera Temperature</h1>
-  //       <p>Trenutna temperatura: {this.state.temperature} stepeni</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//   checkTemperature = () => {
+//     const { temperature } = this.state;
+//     if (temperature === >36 <48) {
+//       this.setState({ message: 'Toplo je!' });
+//     } else {
+//       this.setState({ message: 'hladno je' });
+//     }
+//   };
+
   //       <button onClick={this.checkTemperature}>Proveri</button>
-  //       <p>{this.state.message}</p>
-  //     </div>
-  //   );
-  // }
-}
+      
 
-export default App;
+// export default App;
 
 
 
