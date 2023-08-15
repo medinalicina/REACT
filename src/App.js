@@ -1,46 +1,23 @@
-// import React, { useState } from 'react';
+import React from 'react';
 // import Card from './components/Card';
 // import Button from './components/Button';
 // //usestate cuva 
-// import React, { Component } from 'react';
-// import './domaci.css';
+import {domaci} from './componens/Domaci';
+import './componens/Domaci';
+ 
 
 
+function App() {
+  return (
+    <div className="App">
+      <domaci />
+      <randomNumber number={22} />
+    </div>
+  );
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//   checkTemperature = () => {
-//     const { temperature } = this.state;
-//     if (temperature === >36 <48) {
-//       this.setState({ message: 'Toplo je!' });
-//     } else {
-//       this.setState({ message: 'hladno je' });
-//     }
-//   };
-
-  //       <button onClick={this.checkTemperature}>Proveri</button>
-      
-
-// export default App;
-
-
-
-
-
+export default App;
+ export default domaci;
 
 
 
@@ -68,14 +45,6 @@
           //   <h1>Nema podataka</h1>
           //   <button onClick={() => fetchData()}>Fetchaj podatke</button>
           // </div>
-
-
-
-
-
-
-
-
   //stekoverflov
   // const[broj, setBroj] = useState(0);
   // return (
@@ -105,29 +74,6 @@
   //     price={product.price}/>
   //   ))}
   //    </div>
-
-
-
-
-//
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //      {//    <button onClick={()=> setBroj(broj+1)}>DODAJ</button>
 //     //   {broj}
 //     //   <button onClick={()=> setBroj(broj-1)}>SMANJI</button>

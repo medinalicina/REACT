@@ -3,7 +3,7 @@ import "./domaci.css";
 import Button from "./Button";
 import Card from "./Card";
 
-function domaci(){
+function Domaci(){
     function randomNumber(min, max) {
         return Math.random() * (min - max) + min;
     }
