@@ -172,9 +172,8 @@ export default function Profile() {
   //   ))}
   //    </div>
 //      {//    <button onClick={()=> setBroj(broj+1)}>DODAJ</button>
-//     //   {broj}
-//     //   <button onClick={()=> setBroj(broj-1)}>SMANJI</button>
-//     // </div>
+//   {broj}
+//   <button onClick={()=> setBroj(broj-1)}>SMANJI</button     // </div>
 //     <div className="app">
 //       <h1>Dobrodošli u prodavnicu patika</h1>
 //       <Card
@@ -198,6 +197,23 @@ export default function TodoList() {
     </ul>
   );
 }
+
+
+const today = new Date();
+
+function formatDate(date) {
+  return new Intl.DateTimeFormat(
+    'en-US',
+    { weekday: 'long' }
+  ).format(date);
+}
+
+export default function TodoList() {
+  return (
+    <h1>To Do List for {formatDate(today)}</h1>
+  );
+}
+
 
 
 const today = new Date();
